@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Compiled JS next to TS sources (we ship TS only)
+src/**/*.js
+harnesses/**/*.js
+
+# Secrets — NEVER commit
+.env
+.env.local
+.env.*.local
+client_secret.json
+*.pem
+*.key
+
+# Logs (the demo session log is force-included below)
+logs/*
+!logs/chat-2026-04-21T06-49-14-228Z/
+!logs/chat-2026-04-21T06-49-14-228Z/**
+
+# Agent / tool state
+.sisyphus/
+.gemini/
+.opencode/
+.claude/
+tree_state.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Bun runtime caches
+.bun/

@@ -1,0 +1,23 @@
+{
+  "name": "personaharness",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@google/genai": "^1.48.0"
+  },
+  "bin": {
+    "personaharness": "src/cli/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli/index.ts",
+    "chat": "bun run src/cli/index.ts chat",
+    "test": "bun test"
+  }
+}
