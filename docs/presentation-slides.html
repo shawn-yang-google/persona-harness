@@ -1428,13 +1428,8 @@
         }
     });
 
-    // Initial state
-    updateSlides();
-</script>
-
-</body>
-</html>
-kip when clicking on real links so the GitHub link on the closing slide
+    // Click anywhere = next slide. Shift+click or right-click = previous slide.
+    // Skip when clicking on real links so the GitHub link on the closing slide
     // still works, and skip when text is selected so users can copy code blocks.
     function handleSlideClick(e, direction) {
         if (e.target.closest('a')) return;                 // let links work
