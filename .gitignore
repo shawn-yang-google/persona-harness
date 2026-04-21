@@ -17,10 +17,11 @@ client_secret.json
 *.pem
 *.key
 
-# Logs (the demo session log is force-included below)
+# Logs (specific demo artifacts are force-included below)
 logs/*
 !logs/chat-2026-04-21T06-49-14-228Z/
 !logs/chat-2026-04-21T06-49-14-228Z/**
+!logs/base-responses.json
 
 # Agent / tool state
 .sisyphus/
