@@ -22,6 +22,7 @@ logs/*
 !logs/chat-2026-04-21T06-49-14-228Z/
 !logs/chat-2026-04-21T06-49-14-228Z/**
 !logs/base-responses.json
+!logs/real-harness-capture.txt
 
 # Agent / tool state
 .sisyphus/
