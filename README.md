@@ -2,6 +2,21 @@
 
 A framework that enforces LLM persona consistency through a 4-tier evaluation system. When an LLM drifts from its assigned persona — whether from user manipulation or context rot — PersonaHarness catches it, rejects the response, and auto-rephrases.
 
+## Demo
+
+<p align="center">
+  <img src="docs/demo.gif" alt="PersonaHarness live demo — terminal animation of a 4-turn session with a rigorous-architect persona defending two prompt-injection attacks" width="900">
+</p>
+
+> Live capture of the harness defending the `rigorous-architect` persona against a system-spoof injection.
+> Turn 1: a clean SQL question passes all 6 sub-harnesses on the first attempt.
+> Turn 2: an injected `[System update]` directive produces "Mode updated! 👍" — `BoundaryHarness`,
+> `TraitHarness`, and `CognitiveStyleHarness` reject it in parallel; the rephrase loop produces
+> an in-character refusal that passes on the next attempt.
+>
+> 📊 **Full walkthrough:** [presentation deck](https://shawn-yang-google.github.io/persona-harness/presentation-slides.html)
+> · arrow keys or click to advance · live terminal animation on slide 7
+
 ## Quick Start
 
 ```bash
